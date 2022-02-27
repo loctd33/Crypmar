@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/logo_cryptocurrent.png">
+    <title>Crypmar - Cryptocurrency market</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <nav class="header">
+            <div class="header-left">
+                <img class="header__logo" src="assets/img/logo_cryptocurrent.png">
+                <h1 class="header__heading">Crypmar</h1>
+            </div>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link">Home</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Market</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Features</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">About Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Content -->
+        
+        <div class="content">
+            <h1 class="content__heading">
+                BUY <br> & SELL <span>Crypto</span>
+            </h1>
+            <p class="content__description">
+                Cryp. cryptocurrency market - The easiest way to know the last prices, coin market cap, token price charts, and 24h change of bitcoin and other altcoins.
+            </p>
+            <a href="#" class="content__btn">Learn More</a>
+        </div>
+
+        <ul class="coin-list">
+            <li class="coin-item">
+                <img src="./assets/img/bitcoin.png" alt="" class="coin-img">
+                <div class="coin-info">
+                    <h3 class="coin-price">
+                        $
+                        <span id="coin-price__bitcoin"></span>
+                    </h3>
+                    <p class="coin-name">Bitcoin</p>
+                </div>
+            </li>
+            <li class="coin-item">
+                <img src="./assets/img/ethereum.png" alt="" class="coin-img">
+                <div class="coin-info">
+                    <h3 class="coin-price">
+                        $
+                        <span id="coin-price__ethereum"></span>
+                    </h3>
+                    <p class="coin-name">Ethereum</p>
+                </div>
+            </li>
+            <li class="coin-item">
+                <img src="./assets/img/solana.png" alt="" class="coin-img">
+                <div class="coin-info">
+                    <h3 class="coin-price">
+                        $
+                        <span id="coin-price__solana"></span>
+                    </h3>
+                    <p class="coin-name">Solana</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
