@@ -47,19 +47,16 @@ var setting1 = {
 $.ajax(setting1).done(function(response) {
     var coin1 = response.coins.filter(items => {
         if(items.item.score == 0) {
-            console.log(items);
             return items;
         }
     });
     var coin2 = response.coins.filter(items => {
         if(items.item.score == 1) {
-            console.log(items);
             return items;
         }
     });
     var coin3 = response.coins.filter(items => {
         if(items.item.score == 2) {
-            console.log(items);
             return items;
         }
     });

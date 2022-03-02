@@ -5,174 +5,263 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="icon" href="./assets/img/logo_cryptocurrent.png">
     <title>Crypmar - Cryptocurrency market</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <div class="container">
+    <div class="container ">
         <!-- Header -->
-        <nav class="header">
-            <div class="header-left">
-                <img class="header__logo" src="assets/img/logo_cryptocurrent.png">
-                <h1 class="header__heading">Crypmar</h1>
+        <nav class="header ">
+            <div class="grid wide">
+                <div class="header__navbar">
+                    <div class="header-left">
+                        <img class="header__logo" src="assets/img/logo_cryptocurrent.png">
+                        <h1 class="header__heading">Crypmar</h1>
+                    </div>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Market</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Features</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">About Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="header__list">
-                <li class="header__item">
-                    <a href="#" class="header__link">Home</a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">Market</a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">Features</a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">About Us</a>
-                </li>
-            </ul>
         </nav>
 
         <!-- Content -->
         
         <div class="content">
-            <div>
-                <h1 class="content__heading">
-                    BUY <br> & SELL <span>Crypto</span>
-                </h1>
-                <p class="content__description">
-                    Cryp. cryptocurrency market - The easiest way to know the last prices, coin market cap, token price charts, and 24h change of bitcoin and other altcoins.
-                </p>
-                <a href="#" class="content__btn">Learn More</a>
+            <div class="content-info">
+                <div class="grid wide">
+                    <h1 class="content__heading">
+                        BUY <br> & SELL <span>Crypto</span>
+                    </h1>
+                    <p class="content__description">
+                        Crypmar-Cryptocurrency market:  The easiest way to know the last prices, coin market cap, token price charts, and 24h change of bitcoin and other altcoins.
+                    </p>
+                    <a href="#" class="content__btn">Learn More</a>
+    
+                    <ul class="coin-list">
+                        <li class="coin-item">
+                            <img src="./assets/img/bitcoin.png" alt="" class="coin-img">
+                            <div class="coin-info">
+                                <h3 class="coin-price">
+                                    $
+                                    <span id="coin-price__bitcoin"></span>
+                                </h3>
+                                <p class="coin-name">Bitcoin</p>
+                            </div>
+                        </li>
+                        <li class="coin-item">
+                            <img src="./assets/img/ethereum.png" alt="" class="coin-img">
+                            <div class="coin-info">
+                                <h3 class="coin-price">
+                                    $
+                                    <span id="coin-price__ethereum"></span>
+                                </h3>
+                                <p class="coin-name">Ethereum</p>
+                            </div>
+                        </li>
+                        <li class="coin-item">
+                            <img src="./assets/img/solana.png" alt="" class="coin-img">
+                            <div class="coin-info">
+                                <h3 class="coin-price">
+                                    $
+                                    <span id="coin-price__solana"></span>
+                                </h3>
+                                <p class="coin-name">Solana</p>
+                            </div>
+                        </li>
+                    </ul>
 
-                <ul class="coin-list">
-                    <li class="coin-item">
-                        <img src="./assets/img/bitcoin.png" alt="" class="coin-img">
-                        <div class="coin-info">
-                            <h3 class="coin-price">
-                                $
-                                <span id="coin-price__bitcoin"></span>
-                            </h3>
-                            <p class="coin-name">Bitcoin</p>
-                        </div>
-                    </li>
-                    <li class="coin-item">
-                        <img src="./assets/img/ethereum.png" alt="" class="coin-img">
-                        <div class="coin-info">
-                            <h3 class="coin-price">
-                                $
-                                <span id="coin-price__ethereum"></span>
-                            </h3>
-                            <p class="coin-name">Ethereum</p>
-                        </div>
-                    </li>
-                    <li class="coin-item">
-                        <img src="./assets/img/solana.png" alt="" class="coin-img">
-                        <div class="coin-info">
-                            <h3 class="coin-price">
-                                $
-                                <span id="coin-price__solana"></span>
-                            </h3>
-                            <p class="coin-name">Solana</p>
-                        </div>
-                    </li>
-                </ul>
+                </div>
             </div>
 
             <!-- Trending -->
-            <div class="trending">
-                <h1 class="trending__heading">Trending</h1>
-                <div class="trending-coin-wrap">
-                    <table class="trending-table">
-
-                        <!-- Head Table -->
-                        <thead class="table__head">
-                            <tr class="table__row">
-                                <th class="table__head-item">
-                                    <span>Top</span>
-                                </th>
-                                <th class="table__head-item">
-                                    <span>Coin</span>
-                                </th>
-                                <th class="table__head-item">
-                                    <span>Rank</span>
-                                </th>
-                                <th class="table__head-item">
-                                    <span>Price/BTC</span>
-                                </th>
-                            </tr>
-                        </thead>
-
-                        <!-- Boby Table -->
-                        <tbody class="table__body">
-                            <!-- 1st -->
-                            <tr class="table__body-row">
-                                <td class="table__body-item">
-                                    <img class="table__body-top-img" src="./assets/img/1st_rankcoin.png" alt="">
-                                </td>
-                                <td class="table__body-item">
-                                    <div class="table__body-info">
-                                            <img  class="table__body-logo logo-1" id="logo-1" src="">
-                                        <div class="table__body-name-wrap">
-                                            <span class="table__body-symbols" id="symbols-1"></span>
-                                            <span class="table__body-name name-1" id="name-1"></span>
+            <div class="content-trending">
+                <div class="grid wide">
+                    <h1 class="trending__heading">Trending</h1>
+                    <p class="trending__description">
+                        Top-7 trending coins on CoinGecko as searched by users in the last 24 hours (Ordered by most popular first)
+                    </p>
+                    <div class="trending-coin-wrap">
+                        <table class="trending-table">
+    
+                            <!-- Head Table -->
+                            <thead class="table__head">
+                                <tr class="table__row">
+                                    <th class="table__head-item">
+                                        <span>Top</span>
+                                    </th>
+                                    <th class="table__head-item">
+                                        <span>Coin</span>
+                                    </th>
+                                    <th class="table__head-item">
+                                        <span>Rank</span>
+                                    </th>
+                                    <th class="table__head-item">
+                                        <span>Price/BTC</span>
+                                    </th>
+                                </tr>
+                            </thead>
+    
+                            <!-- Boby Table -->
+                            <tbody class="table__body">
+                                <!-- 1st -->
+                                <tr class="table__body-row">
+                                    <td class="table__body-item">
+                                        <img class="table__body-top-img" src="./assets/img/1st_rankcoin.png" alt="">
+                                    </td>
+                                    <td class="table__body-item">
+                                        <div class="table__body-info">
+                                                <img  class="table__body-logo logo-1" id="logo-1" src="">
+                                            <div class="table__body-name-wrap">
+                                                <span class="table__body-symbols" id="symbols-1"></span>
+                                                <span class="table__body-name name-1" id="name-1"></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                                <td class="table__body-item">
-                                    <span class="table__body-rank" id="rank-1"></span>
-                                </td>
-                                <td class="table__body-item">
-                                    <span class="table__body-price" id="price-1"></span>
-                                </td>
-                            </tr>
-
-                            <!-- 2nd -->
-                            <tr class="table__body-row">
-                                <td class="table__body-item">
-                                    <img class="table__body-top-img" src="./assets/img/2nd_rankcoin.png" alt="">
-                                </td>
-                                <td class="table__body-item">
-                                    <div class="table__body-info">
-                                            <img  class="table__body-logo logo-1" id="logo-2" src="">
-                                        <div class="table__body-name-wrap">
-                                            <span class="table__body-symbols" id="symbols-2"></span>
-                                            <span class="table__body-name name-1" id="name-2"></span>
+                                    </td>
+                                    <td class="table__body-item">
+                                        <span class="table__body-rank" id="rank-1"></span>
+                                    </td>
+                                    <td class="table__body-item">
+                                        <span class="table__body-price" id="price-1"></span>
+                                    </td>
+                                </tr>
+    
+                                <!-- 2nd -->
+                                <tr class="table__body-row">
+                                    <td class="table__body-item">
+                                        <img class="table__body-top-img" src="./assets/img/2nd_rankcoin.png" alt="">
+                                    </td>
+                                    <td class="table__body-item">
+                                        <div class="table__body-info">
+                                                <img  class="table__body-logo logo-1" id="logo-2" src="">
+                                            <div class="table__body-name-wrap">
+                                                <span class="table__body-symbols" id="symbols-2"></span>
+                                                <span class="table__body-name name-1" id="name-2"></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                                <td class="table__body-item">
-                                    <span class="table__body-rank" id="rank-2"></span>
-                                </td>
-                                <td class="table__body-item">
-                                    <span class="table__body-price" id="price-2"></span>
-                                </td>
-                            </tr>
-
-                            <!-- 3rd -->
-                            <tr class="table__body-row">
-                                <td class="table__body-item">
-                                    <img class="table__body-top-img" src="./assets/img/3rd_rankcoin.png" alt="">
-                                </td>
-                                <td class="table__body-item">
-                                    <div class="table__body-info">
-                                            <img  class="table__body-logo logo-1" id="logo-3" src="">
-                                        <div class="table__body-name-wrap">
-                                            <span class="table__body-symbols" id="symbols-3"></span>
-                                            <span class="table__body-name name-1" id="name-3"></span>
+                                    </td>
+                                    <td class="table__body-item">
+                                        <span class="table__body-rank" id="rank-2"></span>
+                                    </td>
+                                    <td class="table__body-item">
+                                        <span class="table__body-price" id="price-2"></span>
+                                    </td>
+                                </tr>
+    
+                                <!-- 3rd -->
+                                <tr class="table__body-row">
+                                    <td class="table__body-item">
+                                        <img class="table__body-top-img" src="./assets/img/3rd_rankcoin.png" alt="">
+                                    </td>
+                                    <td class="table__body-item">
+                                        <div class="table__body-info">
+                                                <img  class="table__body-logo logo-1" id="logo-3" src="">
+                                            <div class="table__body-name-wrap">
+                                                <span class="table__body-symbols" id="symbols-3"></span>
+                                                <span class="table__body-name name-1" id="name-3"></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                                <td class="table__body-item">
-                                    <span class="table__body-rank" id="rank-3"></span>
-                                </td>
-                                <td class="table__body-item">
-                                    <span class="table__body-price" id="price-3"></span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                    </td>
+                                    <td class="table__body-item">
+                                        <span class="table__body-rank" id="rank-3"></span>
+                                    </td>
+                                    <td class="table__body-item">
+                                        <span class="table__body-price" id="price-3"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row footer-container">
+                    <div class="col l-2">
+                        <div class="footer__about">
+                            <div>About Crypmar</div>
+                            <a href="#" class="footer__about-link">Về chúng tôi</a>
+                            <a href="#" class="footer__about-link">Phương pháp luận</a>
+                            <a href="#" class="footer__about-link">Việc làm</a>
+                            <a href="#" class="footer__about-link">Hướng dẫn thương hiệu</a>
+                            <a href="#" class="footer__about-link">Biểu mẫu Yêu cầu</a>
+                            <a href="#" class="footer__about-link">Quảng cáo</a>
+                            <a href="#" class="footer__about-link">Hỏi đáp</a>
+                        </div>
+                    </div>
+                    <div class="col l-2 ">
+                        <div class="footer__coppyright">
+                            <div class="coppyright__top">
+                                <div>Trợ giúp</div>
+                                <a href="#" class="coppyright__header-link">Trung tâm Trợ giúp</a>
+                                <a href="#" class="coppyright__header-link">Contact</a>
+                                <a href="#" class="coppyright__header-link">Săn lỗi nhận thưởng</a>
+                                <a href="#" class="coppyright__header-link">Tuyên bố miễn trừ trách nhiệm</a>
+                            </div>
+                            <div class="coppyright__mid">
+                                <div>Điều khoản</div>
+                                <a href="#" class="coppyright__header-link">Điều khoản dịch vụ</a>
+                                <a href="#" class="coppyright__header-link">Chính sách riêng tư</a>
+                                <a href="#" class="coppyright__header-link">Chính sách quảng cáo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2">
+                        <div class="footer__about">
+                            <div>For Developers</div>
+                            <a href="#" class="footer__about-link">API nhà phát triển</a>
+                            <a href="#" class="footer__about-link">Widgets</a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col l-2">
+                        <div class="footer__community">
+                            <div>Community</div>
+                            <img class="footer__community-img" src="./assets/img/twitter.png" alt="">
+                            <img class="footer__community-img" src="./assets/img/instagram.png" alt="">
+                            <img class="footer__community-img" src="./assets/img/facebook.png" alt="">
+                            <img class="footer__community-img" src="./assets/img/telegram.png" alt="">
+                            <img class="footer__community-img" src="./assets/img/youtube.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col l-4">
+                        <div class="footer__right">
+                            <div class="footer__right-regis">
+                                <div>Muốn luôn được cập nhật về tiền mã hóa?</div>
+                                <div class="footer__right-regis-des">
+                                    Nhận tin tức, cập nhật và báo cáo mới nhất về tiền mã hóa bằng cách đăng ký bản tin miễn phí của chúng tôi.
+                                </div>
+                                <input placeholder="Enter your email" type="email">
+                            
+                            </div>
+
+                            <div class="footer__right-dowload">
+                                <div>Tải về ngay ứng dụng của chúng tôi</div>
+                                <img class="footer__right-dowload-img" src="./assets/img/google_play_store.svg" alt="">
+                                <img class="footer__right-dowload-img" src="./assets/img/apple_app_store.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

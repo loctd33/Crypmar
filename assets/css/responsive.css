@@ -1,3 +1,8 @@
+
+.col {
+    width: 100%;
+}
+
 /* Tablet & Moblie */
 @media (max-width: 1023px) {
     .hide-on-mobile-tablet {
