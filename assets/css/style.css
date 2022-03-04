@@ -105,6 +105,7 @@
     font-weight: bold;
     margin-bottom: 16px;
     color: #fff;
+    opacity: 0;
 }
 .content__heading span {
     color: var(--primary-color);
@@ -115,6 +116,7 @@
     line-height: 22px;
     font-size: 1rem;
     color: #fff;
+    opacity: 0;
 }
 .content__btn {
     display: block;
@@ -127,11 +129,36 @@
     border: 1px solid var(--primary-color);;
     color: var(--primary-color);
     border-radius: 50px;
+    opacity: 0;
 }
 .content__btn:hover {
     background-color: var(--primary-color);
     color: #000;
 }
+
+.slide-left {
+    animation: slideLeft .7s linear forwards;
+}
+.content__heading.slide-left {
+    animation-delay: 0s;
+}
+.content__description.slide-left {
+    animation-delay: .7s;
+}
+.content__btn.slide-left {
+    animation-delay: 1.4s;
+}
+@-webkit-keyframes slideLeft {
+    from {
+        transform: translate(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
 
 .coin-list {
     display: flex;
