@@ -1,6 +1,9 @@
 :root {
     --primary-color: #F9D342;
     --text-color: #4A4A4A;
+    --white-color: #EAECEF;
+    --primary-background-color: #191B20;
+    --primary-background-color-item: #0B0E11;
 }
 *{
     margin: 0;
@@ -20,6 +23,8 @@
     z-index: 99;
     width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
 }
 .header.sticky {
     padding: 12px ;
@@ -137,24 +142,24 @@
 }
 
 .slide-left {
-    animation: slideLeft .7s linear forwards;
+    animation: slideLeft 1s linear forwards;
 }
 .content__heading.slide-left {
     animation-delay: 0s;
 }
 .content__description.slide-left {
-    animation-delay: .7s;
+    animation-delay: 1s;
 }
 .content__btn.slide-left {
-    animation-delay: 1.4s;
+    animation-delay: 2s;
 }
 @-webkit-keyframes slideLeft {
     from {
-        transform: translate(100px);
+        transform: translateX(100px);
         opacity: 0;
     }
     to {
-        transform: translate(0px);
+        transform: translateX(0px);
         opacity: 1;
     }
 }
@@ -197,22 +202,22 @@
     margin: 50px 0;
 }
 .trending__heading {
+    margin-bottom: 8px;
     letter-spacing: 2px;
     font-size: 2.6rem;
     color: var(--text-color);
 }
 .trending__description {
     font-size: 15px;
-    padding: 12px 0;
-    color: var(--text-color);
+    color: #a7a796;
 }
 .trending-coin-wrap {
-    margin-top: 30px;
+    margin-top: 46px;
 }
 .trending-table {
     width: 100%;
-    color: #fff;
-    background-color: #262724;
+    color: var(--white-color);
+    background-color: var(--primary-background-color-item);
     border-radius: 10px;
     border-collapse: collapse;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
@@ -277,12 +282,86 @@
 }
 
 
+
+/* Content-Discover */
+
+.content-discover {
+    padding: 50px 0;
+    background-color: var(--primary-background-color);
+}
+.content-discover__heading {
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    font-size: 2.6rem;
+    color: var(--white-color);
+}
+.discover-nft {
+    min-height: 570px;
+    background-color: var(--primary-background-color-item);
+    border-radius: 8px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.discover-nft.discover-nft__column-reserve {
+    flex-direction: column-reverse;
+}
+.discover-nft .discover-nft__link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+.discover-nft__img {
+    width: 100%;
+}
+.discover-nft__text {
+    letter-spacing: .5px;
+}
+.discover-nft__text-heading {
+    margin: 48px 0 16px;
+    line-height: 32px;
+}
+.discover-nft__text-heading.discover-nft__text-heading-top {
+    margin-top: 0;
+}
+.discover-nft__text-description {
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.discover-nft__text-link {
+    padding-top: 16px;
+    display: none;
+}
+.discover-nft__text-link a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.discover-nft:hover .discover-nft__text-link {
+    display: block;
+}
+.discover-nft__text-link-icon {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 .footer {
-    background-color: #191819;
+    background-color: var(--primary-background-color);
     color: #a0a7a4;
 }
 .footer-container {
+    display: flex;
     padding: 50px 0;
 }
 

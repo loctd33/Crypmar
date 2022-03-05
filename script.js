@@ -37,6 +37,8 @@ var rank3 = document.getElementById("rank-3");
 var price3 = document.getElementById("price-3");
 
 
+var exchangeRateUSD = 41504.87;
+
 var setting1 = {
     "async": true,
     "scrossDomain": true,
@@ -61,22 +63,21 @@ $.ajax(setting1).done(function(response) {
         }
     });
     
-
     logo1.src = coin1[0].item.large;
     sym1.innerHTML = coin1[0].item.symbol;
     name1.innerHTML = coin1[0].item.name;
     rank1.innerHTML = coin1[0].item.market_cap_rank;
-    price1.innerHTML = coin1[0].item.price_btc;
+    price1.innerHTML = "$ " + (coin1[0].item.price_btc*exchangeRateUSD).toFixed(9);
 
     logo2.src = coin2[0].item.large;
     sym2.innerHTML = coin2[0].item.symbol;
     name2.innerHTML = coin2[0].item.name;
     rank2.innerHTML = coin2[0].item.market_cap_rank;
-    price2.innerHTML = coin2[0].item.price_btc;
+    price2.innerHTML = "$ " + (coin2[0].item.price_btc*exchangeRateUSD).toFixed(9);
 
     logo3.src = coin3[0].item.large;
     sym3.innerHTML = coin3[0].item.symbol;
     name3.innerHTML = coin3[0].item.name;
     rank3.innerHTML = coin3[0].item.market_cap_rank;
-    price3.innerHTML = coin3[0].item.price_btc;
+    price3.innerHTML = "$ " + (coin3[0].item.price_btc*exchangeRateUSD).toFixed(9);
 });

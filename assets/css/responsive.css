@@ -1,11 +1,44 @@
 
-.col {
-    width: 100%;
-}
-
 /* Tablet & Moblie */
 @media (max-width: 1023px) {
     .hide-on-mobile-tablet {
         display: none;
     }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+
+
+
+    /* Content - Discover */
+    .discover-nft {
+        flex-direction: row;
+        min-height: auto;
+    }
+    .discover-nft.discover-nft__column-reserve {
+        flex-direction: row-reverse;
+    }
+    .discover-nft__img {
+        width: 256px;
+    }
+    .discover-nft__text {
+        width: 320px;
+    }
+    .discover-nft__text-heading {
+        margin-top: 0;
+    }
+    .discover-nft__text-link {
+        display: block;
+    }
+
+
+    /* footer */
+    .footer-container .footer-item__community,
+    .footer-container .footer-item__dev{
+        margin-top: 50px;
+        order: 1;
+    }
+
+    
 }

@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="icon" href="./assets/img/logo_cryptocurrent.png">
     <title>Crypmar - Cryptocurrency market</title>
+    <script src="https://kit.fontawesome.com/feee232f9b.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <div class="container ">
+    <div class="container">
         <!-- Header -->
         <header class="header">
             <div class="grid wide">
@@ -43,6 +44,8 @@
         <!-- Content -->
         
         <div class="content">
+
+            <!-- Info -->
             <div class="content-info">
                 <div class="grid wide">
                     <h1 class="content__heading slide-left">
@@ -112,7 +115,7 @@
                                         <span>Rank</span>
                                     </th>
                                     <th class="table__head-item">
-                                        <span>Price/BTC</span>
+                                        <span>Price</span>
                                     </th>
                                 </tr>
                             </thead>
@@ -189,13 +192,75 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Discover -->
+            <div class="content-discover">
+                <div class="grid wide">
+                    <h1 class="content-discover__heading">Discover</h1>
+                    <div class="row">
+                        <div class="col gutter-top-bot l-4 m-12">
+                            <div class="discover-nft" >
+                                <a href="#" class="discover-nft__link">
+                                    <img class="discover-nft__img" src="./assets/img/nft.png" alt="">
+                                    <div class="discover-nft__text">
+                                        <h2 class="discover-nft__text-heading">Learn more about the world of NFT</h2>
+                                        <h4 class="discover-nft__text-description">Open the Rare Mystery Box, discover IGO (Initial In-Game Asset Release), Fan Token, and more. with Crypmar NFT.</h4>
+                                        <div class="discover-nft__text-link">
+                                            <a href="#" >
+                                                Learn more
+                                                <i class="discover-nft__text-link-icon fa-solid fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col gutter-top-bot l-4 m-12">
+                            <div class="discover-nft discover-nft__column-reserve " >
+                                <a href="#" class="discover-nft__link">
+                                    <img class="discover-nft__img" src="./assets/img/crypmart-wallet.png" alt="">
+                                    <div class="discover-nft__text">
+                                        <h2 class="discover-nft__text-heading discover-nft__text-heading-top">Grow your business with Crypmar Pay</h2>
+                                        <h4 class="discover-nft__text-description">Attract more customers by paying and receiving crypto payments with our borderless payment technology on Crypmar Pay & Crypmar Marketplace.</h4>
+                                        <div class="discover-nft__text-link">
+                                            <a href="#" >
+                                                Learn more
+                                                <i class="discover-nft__text-link-icon fa-solid fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col gutter-top-bot l-4 m-12">
+                            <div class="discover-nft" >
+                                <a href="#" class="discover-nft__link">
+                                    <img class="discover-nft__img" src="./assets/img/crypmart-earn.png" alt="">
+                                    <div class="discover-nft__text">
+                                        <h2 class="discover-nft__text-heading">Crypmar Earn</h2>
+                                        <h4 class="discover-nft__text-description">Hold crypto and start growing your income.</h4>
+                                        <div class="discover-nft__text-link">
+                                            <a href="#" >
+                                                Learn more
+                                                <i class="discover-nft__text-link-icon fa-solid fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                            
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         
         <!-- Footer -->
         <div class="footer">
             <div class="grid wide">
                 <div class="row footer-container">
-                    <div class="col l-2">
+                    <div class="footer-item__about col l-2 m-3-4">
                         <div class="footer__about">
                             <div class="footer__tittle">About Crypmar</div>
                             <div class="footer_container-link">
@@ -233,7 +298,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-2 ">
+                    
+                    <div class="footer-item__coppyright col l-2 m-3-4 ">
                         <div class="footer__coppyright">
                             <div class="coppyright__top">
                                 <div class="footer__tittle">Trợ giúp</div>
@@ -264,8 +330,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-2">
-                        <div class="footer__about">
+
+                    <div class="footer-item__dev col l-2 m-3-4">
+                        <div class="footer__dev">
                             <div class="footer__tittle">For Developers</div>
                             <div class="footer_container-link">
                                 <a href="#" class="footer__about-link footer__link">API nhà phát triển</a>
@@ -276,8 +343,7 @@
                             
                         </div>
                     </div>
-
-                    <div class="col l-2">
+                    <div class="footer-item__community col l-2 m-3-4">
                         <div class="footer__community">
                             <div class="footer__tittle">Community</div>
                             <a class="footer__community-link" href="#">
@@ -308,7 +374,7 @@
                         </div>
                     </div>
 
-                    <div class="col l-4">
+                    <div class="footer-item__right col l-4 m-4-4">
                         <div class="footer__right">
                             <div class="footer__right-regis">
                                 <div class="footer__right-regis-tittle footer__tittle">Muốn luôn được cập nhật về tiền mã hóa?</div>
