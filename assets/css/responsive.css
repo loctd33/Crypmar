@@ -1,4 +1,9 @@
 
+
+
+
+
+
 /* Tablet & Moblie */
 @media (max-width: 1023px) {
     .hide-on-mobile-tablet {
@@ -31,6 +36,32 @@
     .discover-nft__text-link {
         display: block;
     }
+    .animation-up {
+        animation: slideUp 1s linear forwards;
+    }
+    .animation-down {
+        animation: slideDown 1s linear forwards;
+    }
+    @-webkit-keyframes slideUp {
+        from {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes slideDown {
+        from {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
 
 
     /* footer */
@@ -41,4 +72,36 @@
     }
 
     
+}
+
+/* PC */
+@media (min-width: 1024px) {
+
+
+    .animation-up {
+        animation: slideUp 1s linear forwards;
+    }
+    .animation-down {
+        animation: slideDown 1s linear forwards;
+    }
+    @-webkit-keyframes slideUp {
+        from {
+            transform: translateY(-200px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes slideDown {
+        from {
+            transform: translateY(200px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
 }

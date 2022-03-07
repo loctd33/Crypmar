@@ -142,10 +142,10 @@
     animation-delay: 0.5s;
 }
 .content__description.slide-left {
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
 .content__btn.slide-left {
-    animation-delay: 2.5s;
+    animation-delay: 1.5s;
 }
 @-webkit-keyframes slideLeft {
     from {

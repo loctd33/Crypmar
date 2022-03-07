@@ -198,7 +198,7 @@
                 <div class="grid wide">
                     <h1 class="content-discover__heading">Discover</h1>
                     <div class="row">
-                        <div class="col gutter-top-bot l-4 m-12">
+                        <div class="col gutter-top-bot l-4 m-12 animation">
                             <div class="discover-nft" >
                                 <a href="#" class="discover-nft__link">
                                     <img class="discover-nft__img" src="./assets/img/nft.png" alt="">
@@ -215,7 +215,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col gutter-top-bot l-4 m-12">
+                        <div class="col gutter-top-bot l-4 m-12 animation">
                             <div class="discover-nft discover-nft__column-reserve " >
                                 <a href="#" class="discover-nft__link">
                                     <img class="discover-nft__img" src="./assets/img/crypmart-wallet.png" alt="">
@@ -232,7 +232,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col gutter-top-bot l-4 m-12">
+                        <div class="col gutter-top-bot l-4 m-12 animation">
                             <div class="discover-nft" >
                                 <a href="#" class="discover-nft__link">
                                     <img class="discover-nft__img" src="./assets/img/crypmart-earn.png" alt="">
@@ -408,6 +408,24 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         })
+
+        window.addEventListener("scroll", function (event) {
+            var scrollPosition = this.scrollY;
+            var elementUp = document.getElementsByClassName("animation");
+            var positionElementStart = 900;
+            var positionElementEnd = 1600;
+            
+            if(scrollPosition > positionElementStart && scrollPosition < positionElementEnd) {
+                elementUp[0].classList.add("animation-up");
+                elementUp[1].classList.add("animation-down");
+                elementUp[2].classList.add("animation-up");
+            }
+            else {
+                elementUp[0].classList.remove("animation-up");
+                elementUp[1].classList.remove("animation-down");
+                elementUp[2].classList.remove("animation-up");
+            }
+        });
     </script>
 </body>
 </html>
