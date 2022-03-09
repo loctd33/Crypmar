@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="icon" href="./assets/img/logo_cryptocurrent.png">
     <title>Crypmar - Cryptocurrency market</title>
     <script src="https://kit.fontawesome.com/feee232f9b.js" crossorigin="anonymous"></script>
@@ -28,13 +29,13 @@
                             <a href="#" class="header__link">Home</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Market</a>
+                            <a href="#" class="header__link">Trending</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Features</a>
+                            <a href="#" class="header__link">Discover</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">About Us</a>
+                            <a href="#" class="header__link">About</a>
                         </li>
                     </ul>
                 </div>
@@ -173,7 +174,7 @@
                                     </td>
                                     <td class="table__body-item">
                                         <div class="table__body-info">
-                                                <img  class="table__body-logo logo-1" id="logo-3" src="">
+                                            <img  class="table__body-logo logo-1" id="logo-3" src="">
                                             <div class="table__body-name-wrap">
                                                 <span class="table__body-symbols" id="symbols-3"></span>
                                                 <span class="table__body-name name-1" id="name-3"></span>
@@ -250,6 +251,77 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About -->
+            <div class="content-about">
+                <div class="grid wide">
+                    <div class="content-about__container">
+                        <div class="about-top">
+                            <h1 class="about__heading">About</h1>
+                            <p class="about__description">
+                                Crypmar is a cryptocurrency exchange built by traders,
+                                 for traders. Crypmar offers innovative products including
+                                  industry-first derivatives, options, volatility products
+                                   and leveraged tokens. We strive to develop a platform
+                                    robust enough for professional trading firms and
+                                     intuitive enough for first-time users.
+                            </p>
+                        </div>
+
+                        <div class="about-bottom">
+                            <div class="about-bottom__info about-animation">
+                                <img class="about-bottom__info-img" src="./assets/img/pexels-andrea.jpg" alt="">
+                                <h2 class="about-bottom__info-name">Loc Tran Duy</h2>
+                                <h3 class="about-bottom__info-position">Coder Crypmar</h3>
+                            </div>
+                            <div class="about-bottom__description about-animation">
+                                <ul class="about-bottom__description-list">
+                                    <li class="about__list-item">
+                                        <img class="about__list-item-img" src="./assets/img/cake.png" alt="">
+                                        <span>Birthday:</span>
+                                        3/3/2000
+                                    </li>
+                                    <li class="about__list-item">
+                                        <img class="about__list-item-img" src="./assets/img/location.png" alt="">
+                                        <span>Adress: </span>
+                                         Quang Nam, Viet Nam
+                                    </li>
+                                    <li class="about__list-item">
+                                        <img class="about__list-item-img" src="./assets/img/graduated.png" alt="">
+                                        <span>School: </span>
+                                         Duy Tan University
+                                    </li>
+                                    <li class="about__list-item">
+                                        <img class="about__list-item-img" src="./assets/img/gmail.png" alt="">
+                                        <span>Email: </span>
+                                         loc.tranduy33@gmail.com
+                                    </li>
+                                    <li class="about__list-item">
+                                        <img class="about__list-item-img" src="./assets/img/phone-call.png" alt="">
+                                        <span>Phone: </span>
+                                         0764562797
+                                    </li>
+                                    <li class="about__list-item">
+                                        <img class="about__list-item-img" src="./assets/img/social-media.png" alt="">
+                                        <span>Social: </span>
+                                         
+                                        <a href="https://www.facebook.com/d.loctd" class="about__list-item-link">
+                                            <img class="about__list-item-link-img" src="./assets/img/facebook_square.png">
+                                        </a>
+                                        <a href="#" class="about__list-item-link">
+                                            <img class="about__list-item-link-img" src="./assets/img/instagram_square.png">
+                                        </a>
+                                        <a href="https://github.com/loctd33" class="about__list-item-link">
+                                            <img class="about__list-item-link-img" src="./assets/img/github.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -402,30 +474,8 @@
         </div>
 
     </div>
-    <script src="script.js"></script>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
-
-        window.addEventListener("scroll", function (event) {
-            var scrollPosition = this.scrollY;
-            var elementUp = document.getElementsByClassName("animation");
-            var positionElementStart = 900;
-            var positionElementEnd = 1600;
-            
-            if(scrollPosition > positionElementStart && scrollPosition < positionElementEnd) {
-                elementUp[0].classList.add("animation-up");
-                elementUp[1].classList.add("animation-down");
-                elementUp[2].classList.add("animation-up");
-            }
-            else {
-                elementUp[0].classList.remove("animation-up");
-                elementUp[1].classList.remove("animation-down");
-                elementUp[2].classList.remove("animation-up");
-            }
-        });
-    </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/event.js"></script>
+    
 </body>
 </html>
