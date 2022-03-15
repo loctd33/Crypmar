@@ -2,14 +2,20 @@
 
 
 
+/* PC */
+@media (min-width: 1024px) {
 
 
-/* Tablet & Moblie */
-@media (max-width: 1023px) {
-    .hide-on-mobile-tablet {
-        display: none;
+    .animation-up {
+        animation: slideUp 1s linear forwards;
     }
+    .animation-down {
+        animation: slideDown 1s linear forwards;
+    }
+    
 }
+
+
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
 
@@ -47,22 +53,103 @@
     /* footer */
     .footer-container .footer-item__community,
     .footer-container .footer-item__dev{
-        margin-top: 50px;
         order: 1;
     }
 
     
 }
 
-/* PC */
-@media (min-width: 1024px) {
-
-
-    .animation-up {
-        animation: slideUp 1.5s linear forwards;
+/* Tablet & Moblie */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
     }
-    .animation-down {
-        animation: slideDown 1.5s linear forwards;
+}
+
+
+/* Mobile */
+@media (max-width: 739px) {
+    
+    .grid {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    /* Header */
+    .header {
+        padding: 16px 0;
+    }
+    .header.sticky .header-navbar__overlay,
+    .header.sticky .header__list {
+        top: 46px;
+    }
+    .header__list {
+        display: inline-block;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        top: 67px;
+        width:100%;
+        height: 100vh;
+        background-color: var(--primary-color);
+        text-align: center;
+        font-size: 1.2rem;
+        transform: translateX(100%);
+        transition: transform linear .5s;
     }
     
+
+    .header__list .header__item {
+        padding: 24px;
+    }
+    .header__heading {
+        font-size: 1.8rem;
+    }
+    .header.sticky {
+        padding: 6px 0; 
+    }
+
+    .header-navbar__mobile {
+        display: block;
+    }
+    .header-navbar__input:checked ~ .header__list {
+        transform: translateX(0%);
+    }
+
+
+    /* Content */
+    .content-info {
+        padding-bottom: 50px;
+    }
+    .content__heading {
+        font-size: 2.8rem;
+        margin-top: 90px;
+    }
+    .content__description {
+        width: 85%;
+        font-size: 0.875rem;
+    }
+
+    .coin-list {
+        display: none;
+    }
+    /* .coin-item {
+        padding: 6px;
+    }
+    .coin-info .coin-price {
+        font-size: 0.875rem;
+    }
+    .coin-info .coin-name {
+        font-size: 0.9rem;
+    } */
+
+
+
+
+    .about-bottom__description {
+        display: none;
+    }
+    .table__body-name-wrap {
+        width: unset;
+    }
 }

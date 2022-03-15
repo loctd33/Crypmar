@@ -127,7 +127,7 @@
 @media (min-width: 740px) and (max-width: 1023px) {
     .grid {
         /* width: 644px; */
-        width: 860px;
+        width: 686px;
     }
     .col.gutter-top-bot {
         margin-top: 8px;
