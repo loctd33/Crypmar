@@ -144,7 +144,14 @@
     } */
 
 
+    /* Discover */
 
+    .discover-nft {
+        min-height: auto;
+    }
+    .discover-nft__text-link {
+        display: block;
+    }
 
     .about-bottom__description {
         display: none;
