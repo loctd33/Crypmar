@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: 'poppin', sans-serif;  
 }
 
@@ -40,10 +41,11 @@
     justify-content: space-between;
     align-items: center;
 }
-.header-left {
+.header-left a {
     display: flex;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
 }
 .header__logo {
     width: 40px;
