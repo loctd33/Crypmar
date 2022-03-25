@@ -382,8 +382,8 @@
     border: 1px solid var(--primary-color);
 }
 .about-bottom__info-img {
-    width: 230px;
-    height: 200px;
+    max-width: 200px;
+    min-height: 200px;
     border-radius: 22px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -399,6 +399,8 @@
 
 .about-bottom__description {
     padding-left: 50px;
+    display: flex;
+    align-items: center;
 }
 .about-bottom__description-list {
     list-style: none;
@@ -417,7 +419,6 @@
     font-style: italic;
 }
 .about__list-item:first-child {
-    padding-top: 30px;
 }
 .about__list-item-img {
     width: 16px;

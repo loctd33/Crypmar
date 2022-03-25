@@ -20,7 +20,9 @@
 @media (min-width: 740px) and (max-width: 1023px) {
 
 
-
+    .coin-list {
+        justify-content: center;
+    }
 
     /* Content - Discover */
     .discover-nft {
