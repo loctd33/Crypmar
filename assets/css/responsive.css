@@ -84,6 +84,7 @@
     .header.sticky .header-navbar__overlay,
     .header.sticky .header__list {
         top: 46px;
+        background-color: var(--primary-background-color);
     }
     .header__list {
         display: inline-block;
